@@ -316,6 +316,12 @@
 # - Standby owner(s): n/a
 /extensions/typeorm @hacksparrow
 
+# GraphQL
+#
+# - Issue label: GraphQL
+# - Primary owner(s): @raymondfeng
+/extensions/graphql @raymondfeng
+
 #
 # Build & internal tooling
 #
