@@ -8,7 +8,7 @@ import {ApplicationConfig} from '@loopback/core';
 import {RepositoryMixin} from '@loopback/repository';
 import {RestApplication} from '@loopback/rest';
 import path from 'path';
-import {GraphQLBindings, GraphQLComponent} from '../../../..';
+import {GraphQLBindings, GraphQLComponent} from '../../..';
 import {sampleRecipes} from './sample-recipes';
 
 export {ApplicationConfig};

@@ -8,7 +8,7 @@
   ],
   "main": "types/index.d.ts",
   "engines": {
-    "node": ">=10"
+    "node": ">=10.16"
   },
   "scripts": {
     "build": "tsc",
@@ -31,21 +31,19 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^2.3.1",
-    "@loopback/context": "^3.8.1",
-    "@loopback/core": "^2.7.0",
-    "@loopback/openapi-v3": "^3.4.1",
-    "@loopback/repository": "^2.5.1",
-    "@loopback/rest": "^5.0.1",
-    "@loopback/rest-explorer": "^2.2.2",
-    "tslib": "^1.10.0"
+    "@loopback/boot": "^2.3.5",
+    "@loopback/core": "^2.9.1",
+    "@loopback/repository": "^2.9.0",
+    "@loopback/rest": "^5.2.0",
+    "@loopback/rest-explorer": "^2.2.6",
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
-    "@loopback/testlab": "^3.1.5",
-    "@types/node": "^10.17.24",
-    "typescript": "~3.9.3"
+    "@loopback/testlab": "^3.2.0",
+    "@types/node": "^10.17.26",
+    "typescript": "~3.9.5"
   },
   "copyright.owner": "IBM Corp."
 }

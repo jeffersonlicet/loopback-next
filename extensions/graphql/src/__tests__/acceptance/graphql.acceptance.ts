@@ -6,11 +6,11 @@
 import {Application, createBindingFromClass} from '@loopback/core';
 import {supertest} from '@loopback/testlab';
 import {GraphQLServer} from '../..';
-import {RecipesDataSource} from '../fixtures/graphql-test/src/datasources';
-import {RecipeResolver} from '../fixtures/graphql-test/src/graphql-resolvers/recipe-resolver';
-import {RecipeRepository} from '../fixtures/graphql-test/src/repositories';
-import {sampleRecipes} from '../fixtures/graphql-test/src/sample-recipes';
-import {RecipeService} from '../fixtures/graphql-test/src/services/recipe.service';
+import {RecipesDataSource} from '../../__examples__/graphql-test/src/datasources';
+import {RecipeResolver} from '../../__examples__/graphql-test/src/graphql-resolvers/recipe-resolver';
+import {RecipeRepository} from '../../__examples__/graphql-test/src/repositories';
+import {sampleRecipes} from '../../__examples__/graphql-test/src/sample-recipes';
+import {RecipeService} from '../../__examples__/graphql-test/src/services/recipe.service';
 import {runTests} from './graphql-tests';
 
 describe('GraphQL server', () => {

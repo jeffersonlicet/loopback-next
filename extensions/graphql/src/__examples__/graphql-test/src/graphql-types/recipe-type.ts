@@ -4,7 +4,7 @@
 // License text available at https://opensource.org/licenses/MIT
 
 import {Entity, model, property} from '@loopback/repository';
-import {field, Float, ID, Int, objectType} from '../../../../..';
+import {field, Float, ID, Int, objectType} from '../../../..';
 
 @objectType({description: 'Object representing cooking recipe'})
 @model({settings: {strict: false}})

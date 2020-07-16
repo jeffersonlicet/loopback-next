@@ -4,7 +4,7 @@
 // License text available at https://opensource.org/licenses/MIT
 
 import {createRestAppClient, givenHttpServerConfig} from '@loopback/testlab';
-import {GraphqlTestApplication} from '../fixtures/graphql-test/src';
+import {GraphqlTestApplication} from '../../__examples__/graphql-test/src';
 import {runTests} from './graphql-tests';
 
 describe('GraphQL middleware', () => {

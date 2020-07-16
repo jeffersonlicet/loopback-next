@@ -12,6 +12,12 @@ This module provides integration with [GraphQL](https://graphql.org/) using
 > using `0.x.y` versions. Their APIs and functionality may be subject to
 > breaking changes in future releases.
 
+## Installation
+
+```sh
+npm install --save @loopback/graphql
+```
+
 ## Basic Use
 
 ```ts
@@ -218,12 +224,6 @@ query GetRecipe1 {
     }
   }
 }
-```
-
-## Installation
-
-```sh
-npm install --save @loopback/graphql
 ```
 
 ## Contributions

@@ -14,7 +14,7 @@ import {
   query,
   resolver,
   root,
-} from '../../../../..';
+} from '../../../..';
 import {RecipeInput} from '../graphql-types/recipe-input';
 import {Recipe} from '../graphql-types/recipe-type';
 import {RecipeRepository} from '../repositories';

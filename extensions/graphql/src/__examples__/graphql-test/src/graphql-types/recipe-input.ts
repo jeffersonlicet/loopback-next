@@ -3,7 +3,7 @@
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {field, inputType} from '../../../../..';
+import {field, inputType} from '../../../..';
 import {Recipe} from './recipe-type';
 
 @inputType()
