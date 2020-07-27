@@ -1,16 +1,16 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 import {Application, createBindingFromClass} from '@loopback/core';
+import {GraphQLServer} from '@loopback/graphql';
 import {supertest} from '@loopback/testlab';
-import {GraphQLServer} from '../..';
-import {RecipesDataSource} from '../../__examples__/graphql-test/src/datasources';
-import {RecipeResolver} from '../../__examples__/graphql-test/src/graphql-resolvers/recipe-resolver';
-import {RecipeRepository} from '../../__examples__/graphql-test/src/repositories';
-import {sampleRecipes} from '../../__examples__/graphql-test/src/sample-recipes';
-import {RecipeService} from '../../__examples__/graphql-test/src/services/recipe.service';
+import {RecipesDataSource} from '../../datasources';
+import {RecipeResolver} from '../../graphql-resolvers/recipe-resolver';
+import {RecipeRepository} from '../../repositories';
+import {sampleRecipes} from '../../sample-recipes';
+import {RecipeService} from '../../services/recipe.service';
 import {runTests} from './graphql-tests';
 
 describe('GraphQL server', () => {

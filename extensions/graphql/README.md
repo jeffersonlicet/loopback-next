@@ -20,6 +20,9 @@ npm install --save @loopback/graphql
 
 ## Basic Use
 
+Let's assume we build an application to expose GraphQL endpoints similar as
+[@loopback/example-graphql](https://github.com/strongloop/loopback-next/tree/master/examples/graphql).
+
 ```ts
 export class MyApplication extends BootMixin(RestApplication) {
   constructor(config: ApplicationConfig) {
@@ -58,7 +61,7 @@ import {RestApplication} from '@loopback/rest';
 import {ApplicationConfig} from '@loopback/core';
 import {GraphQLComponent, GraphQLBindings} from '@loopback/graphql';
 
-export class GraphqlTestApplication extends BootMixin(
+export class GraphqlDemoApplication extends BootMixin(
   RepositoryMixin(RestApplication),
 ) {
   constructor(options: ApplicationConfig = {}) {
@@ -264,56 +267,8 @@ resolver classes from `src/graphql-resolvers` during `app.boot()`.
 
 ## Try it out
 
-```sh
-npm run demo
-```
-
-You should see the following messages:
-
-```sh
-Server is running at http://[::1]:3000
-Try http://[::1]:3000/graphql
-```
-
-Open http://127.0.0.1:3000/graphql in your browser to play with the GraphiQL.
-
-![graphql-demo](graphql-demo.png)
-
-1. Copy the query to the right panel:
-
-```graphql
-query GetRecipe1 {
-  recipe(recipeId: "1") {
-    title
-    description
-    ratings
-    creationDate
-    ratingsCount(minRate: 2)
-    averageRating
-    ingredients
-    numberInCollection
-  }
-}
-```
-
-2. Click on the run icon:
-
-```json
-{
-  "data": {
-    "recipe": {
-      "title": "Recipe 1",
-      "description": "Desc 1",
-      "ratings": [0, 3, 1],
-      "creationDate": "2018-04-11T00:00:00.000Z",
-      "ratingsCount": 1,
-      "averageRating": 1.3333333333333333,
-      "ingredients": ["one", "two", "three"],
-      "numberInCollection": 1
-    }
-  }
-}
-```
+Check out
+[@loopback/example-graphql](https://github.com/strongloop/loopback-next/tree/master/examples/graphql).
 
 ## Contributions
 

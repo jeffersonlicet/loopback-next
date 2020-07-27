@@ -1,11 +1,9 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 import {service} from '@loopback/core';
-import {repository} from '@loopback/repository';
-import {ResolverInterface} from 'type-graphql';
 import {
   arg,
   fieldResolver,
@@ -13,8 +11,10 @@ import {
   mutation,
   query,
   resolver,
+  ResolverInterface,
   root,
-} from '../../../..';
+} from '@loopback/graphql';
+import {repository} from '@loopback/repository';
 import {RecipeInput} from '../graphql-types/recipe-input';
 import {Recipe} from '../graphql-types/recipe-type';
 import {RecipeRepository} from '../repositories';

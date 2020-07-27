@@ -1,5 +1,5 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -8,12 +8,12 @@ import {ApplicationConfig} from '@loopback/core';
 import {RepositoryMixin} from '@loopback/repository';
 import {RestApplication} from '@loopback/rest';
 import path from 'path';
-import {GraphQLBindings, GraphQLComponent} from '../../..';
+import {GraphQLBindings, GraphQLComponent} from '@loopback/graphql';
 import {sampleRecipes} from './sample-recipes';
 
 export {ApplicationConfig};
 
-export class GraphqlTestApplication extends BootMixin(
+export class GraphqlDemoApplication extends BootMixin(
   RepositoryMixin(RestApplication),
 ) {
   constructor(options: ApplicationConfig = {}) {

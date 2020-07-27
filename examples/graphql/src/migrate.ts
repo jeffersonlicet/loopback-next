@@ -1,15 +1,15 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {GraphqlTestApplication} from './application';
+import {GraphqlDemoApplication} from './application';
 
 export async function migrate(args: string[]) {
   const existingSchema = args.includes('--rebuild') ? 'drop' : 'alter';
   console.log('Migrating schemas (%s existing schema)', existingSchema);
 
-  const app = new GraphqlTestApplication();
+  const app = new GraphqlDemoApplication();
   await app.boot();
   await app.migrateSchema({existingSchema});
 

@@ -1,14 +1,14 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 import {createRestAppClient, givenHttpServerConfig} from '@loopback/testlab';
-import {GraphqlTestApplication} from '../../__examples__/graphql-test/src';
+import {GraphqlDemoApplication} from '../../';
 import {runTests} from './graphql-tests';
 
 describe('GraphQL middleware', () => {
-  let app: GraphqlTestApplication;
+  let app: GraphqlDemoApplication;
 
   before(giveAppWithGraphQLMiddleware);
   after(stopApp);
@@ -16,7 +16,7 @@ describe('GraphQL middleware', () => {
   runTests(() => createRestAppClient(app));
 
   async function giveAppWithGraphQLMiddleware() {
-    app = new GraphqlTestApplication({rest: givenHttpServerConfig()});
+    app = new GraphqlDemoApplication({rest: givenHttpServerConfig()});
     await app.boot();
     await app.start();
     return app;

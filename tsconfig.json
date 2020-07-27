@@ -35,6 +35,9 @@
       "path": "examples/file-transfer/tsconfig.json"
     },
     {
+      "path": "examples/graphql/tsconfig.json"
+    },
+    {
       "path": "examples/greeter-extension/tsconfig.json"
     },
     {

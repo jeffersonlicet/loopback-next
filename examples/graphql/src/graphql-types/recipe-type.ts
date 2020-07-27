@@ -1,10 +1,10 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
+import {field, Float, ID, Int, objectType} from '@loopback/graphql';
 import {Entity, model, property} from '@loopback/repository';
-import {field, Float, ID, Int, objectType} from '../../../..';
 
 @objectType({description: 'Object representing cooking recipe'})
 @model({settings: {strict: false}})

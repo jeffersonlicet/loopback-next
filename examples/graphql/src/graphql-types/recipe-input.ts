@@ -1,9 +1,9 @@
-// Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @loopback/graphql
+// Copyright IBM Corp. 2020. All Rights Reserved.
+// Node module: @loopback/example-graphql
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {field, inputType} from '../../../..';
+import {field, inputType} from '@loopback/graphql';
 import {Recipe} from './recipe-type';
 
 @inputType()

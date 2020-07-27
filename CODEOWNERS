@@ -321,6 +321,7 @@
 # - Issue label: GraphQL
 # - Primary owner(s): @raymondfeng
 /extensions/graphql @raymondfeng
+/examples/graphql @raymondfeng
 
 #
 # Build & internal tooling
