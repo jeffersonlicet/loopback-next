@@ -1,9 +1,13 @@
 import {Component, ProviderMap} from '@loopback/core';
+import {<%= project.name.charAt(0).toUpperCase() + project.name.slice(1) %>Bindings} from './keys'
+import {<%= project.name.toUpperCase() %>_OPTIONS} from './types';
 
+@bind({tags: {[ContextTags.KEY]: {<%= project.name.charAt(0).toUpperCase() + project.name.slice(1) %>Bindings.COMPONENT}})
 export class <%= project.componentName %> implements Component {
-  constructor() {}
-
-  providers?: ProviderMap = {
-  };
-
+  constructor(
+    @inject(CoreBindings.APPLICATION_INSTANCE)
+    private application: Application,
+    @config()
+    options: Options = <%= project.name.toUpperCase() %>_OPTIONS,
+  ) {}
 }
