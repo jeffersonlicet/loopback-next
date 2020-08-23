@@ -4,7 +4,7 @@ import {<%= project.componentName %>} from './component';
 /**
  * Binding keys used by this component.
  */
-export namespace <%= project.name.charAt(0).toUpperCase() + project.name.slice(1) %>Bindings {
+export namespace <%= project.bindingsNamespace %> {
   export const COMPONENT = BindingKey.create<<%= project.componentName %>>(
     `${CoreBindings.COMPONENTS}.<%= project.componentName %>`,
   );

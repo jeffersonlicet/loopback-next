@@ -60,6 +60,12 @@ module.exports = class ExtensionGenerator extends ProjectGenerator {
 
   promptOptions() {
     if (this.shouldExit()) return;
+    const titleCase =
+      this.projectInfo.name.charAt(0).toUpperCase() +
+      this.projectInfo.name.slice(1);
+    this.projectInfo.optionsInterface = `${titleCase}Options`;
+    this.projectInfo.bindingsNamespace = `${titleCase}Bindings`;
+    this.projectInfo.defaultOptions = `DEFAULT_${this.projectInfo.name.toUpperCase()}_OPTIONS`;
     return super.promptOptions();
   }
 
