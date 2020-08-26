@@ -89,7 +89,7 @@ ctx.bind('utilities.PasswordHash').to(PasswordHasher)
 // Bind the UserController class as the user management implementation
 ctx.bind('controllers.UserController').toClass(UserController);
 
-// Locate the an instance of UserController from the context
+// Locate the instance of UserController from the context
 const userController: UserController = await ctx.get<UserController>('controller.UserController');
 // Run the login()
 const ok = await userController.login('John', 'MyPassWord');
@@ -190,7 +190,23 @@ An application-level component usually contributes:
 ### Learn from existing ones
 
 - [loopback4-example-log-extension](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension)
+- [@loopback/apiconnect](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect)
 - [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
+- [@loopback/authentication-jwt](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-jwt)
+- [@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport)
+- [@loopback/authorization](https://github.com/strongloop/loopback-next/tree/master/packages/authorization)
+- [@loopback/boot](https://github.com/strongloop/loopback-next/tree/master/packages/boot)
+- [@loopback/booter-lb3app](https://github.com/strongloop/loopback-next/tree/master/packages/booter-lb3app)
+- [@loopback/context-explorer](https://github.com/strongloop/loopback-next/tree/master/extensions/context-explorer)
+- [@loopback/cron](https://github.com/strongloop/loopback-next/tree/master/extensions/cron)
+- [@loopback/extension-health](https://github.com/strongloop/loopback-next/tree/master/extensions/health)
+- [@loopback/extension-logging](https://github.com/strongloop/loopback-next/tree/master/extensions/logging)
+- [@loopback/extension-metrics](https://github.com/strongloop/loopback-next/tree/master/extensions/metrics)
+- [@loopback/pooling](https://github.com/strongloop/loopback-next/tree/master/extensions/pooling)
+- [@loopback/rest](https://github.com/strongloop/loopback-next/tree/master/packages/rest)
+- [@loopback/rest-crud](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud)
+- [@loopback/rest-explorer](https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer)
+- [@loopback/typeorm](https://github.com/strongloop/loopback-next/tree/master/extensions/typeorm)
 
 ### Create your own extension
 
