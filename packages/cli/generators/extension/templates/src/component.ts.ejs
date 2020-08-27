@@ -12,12 +12,13 @@ import {
 import {<%= project.bindingsNamespace %>} from './keys'
 import {<%= project.defaultOptions %>, <%= project.optionsInterface %>} from './types';
 
+// Configure the binding for <%= project.componentName %>
 @bind({tags: {[ContextTags.KEY]: <%= project.bindingsNamespace %>.COMPONENT}})
 export class <%= project.componentName %> implements Component {
   constructor(
     @inject(CoreBindings.APPLICATION_INSTANCE)
     private application: Application,
     @config()
-    options: <%= project.optionsInterface %> = <%= project.defaultOptions %>,
+    private options: <%= project.optionsInterface %> = <%= project.defaultOptions %>,
   ) {}
 }
