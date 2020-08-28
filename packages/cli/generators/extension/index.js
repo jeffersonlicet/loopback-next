@@ -70,12 +70,12 @@ module.exports = class ExtensionGenerator extends ProjectGenerator {
 
   scaffold() {
     if (this.projectInfo) {
-      const titleCase =
-        this.projectInfo.name.charAt(0).toUpperCase() +
-        this.projectInfo.name.slice(1);
-      this.projectInfo.optionsInterface = `${titleCase}Options`;
-      this.projectInfo.bindingsNamespace = `${titleCase}Bindings`;
-      this.projectInfo.defaultOptions = `DEFAULT_${this.projectInfo.name.toUpperCase()}_OPTIONS`;
+      this.projectInfo.optionsInterface = `${this.projectInfo.componentName}Options`;
+      this.projectInfo.bindingsNamespace = `${this.projectInfo.componentName}Bindings`;
+      const uppercaseUnderscore = this.projectInfo.name
+        .toUpperCase()
+        .replace(/\W/g, '_');
+      this.projectInfo.defaultOptions = `DEFAULT_${uppercaseUnderscore}_OPTIONS`;
     }
     return super.scaffold();
   }

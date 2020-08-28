@@ -88,16 +88,12 @@ app.component(AuthenticationComponent);
 Here is a list of components officially created and maintained by the LoopBack
 team.
 
-- [@loopback/apiconnect](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect) -
-  An extension for integrating with
-  [IBM API Connect](https://www.ibm.com/cloud/api-connect)
+### Core components
+
+These components implement the primary LoopBack capabilities.
+
 - [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication) -
   A LoopBack component for authentication support
-- [@loopback/authentication-jwt](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-jwt) -
-  Extension for JWT authentication
-- [@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport) -
-  A package creating adapters between the passport module and
-  @loopback/authentication
 - [@loopback/authorization](https://github.com/strongloop/loopback-next/tree/master/packages/authorization) -
   A LoopBack component for authorization support
 - [@loopback/boot](https://github.com/strongloop/loopback-next/tree/master/packages/boot) -
@@ -105,6 +101,26 @@ team.
 - [@loopback/booter-lb3app](https://github.com/strongloop/loopback-next/tree/master/packages/booter-lb3app) -
   A booter component for LoopBack 3 applications to expose their REST API via
   LoopBack 4
+- [@loopback/rest](https://github.com/strongloop/loopback-next/tree/master/packages/rest) -
+  Expose controllers as REST endpoints and route REST API requests to controller
+  methods
+- [@loopback/rest-crud](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud) -
+  REST API controller implementing default CRUD semantics
+- [@loopback/rest-explorer](https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer) -
+  LoopBack's API Explorer
+
+### Extensions
+
+These components add additional capabilities to LoopBack.
+
+- [@loopback/apiconnect](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect) -
+  An extension for integrating with
+  [IBM API Connect](https://www.ibm.com/cloud/api-connect)
+- [@loopback/authentication-jwt](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-jwt) -
+  Extension for JWT authentication
+- [@loopback/authentication-passport](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport) -
+  A package creating adapters between the passport module and
+  @loopback/authentication
 - [@loopback/context-explorer](https://github.com/strongloop/loopback-next/tree/master/extensions/context-explorer) -
   Visualize context hierarchy, bindings, configurations, and dependencies
 - [@loopback/cron](https://github.com/strongloop/loopback-next/tree/master/extensions/cron) -
@@ -117,13 +133,6 @@ team.
   An extension exposes metrics for Prometheus with LoopBack 4
 - [@loopback/pooling](https://github.com/strongloop/loopback-next/tree/master/extensions/pooling) -
   Resource pooling service for LoopBack 4
-- [@loopback/rest](https://github.com/strongloop/loopback-next/tree/master/packages/rest) -
-  Expose controllers as REST endpoints and route REST API requests to controller
-  methods
-- [@loopback/rest-crud](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud) -
-  REST API controller implementing default CRUD semantics
-- [@loopback/rest-explorer](https://github.com/strongloop/loopback-next/tree/master/packages/rest-explorer) -
-  LoopBack's API Explorer
 - [@loopback/typeorm](https://github.com/strongloop/loopback-next/tree/master/extensions/typeorm) -
   Adds support for TypeORM in LoopBack
 
